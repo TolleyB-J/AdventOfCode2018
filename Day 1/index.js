@@ -1,5 +1,4 @@
-const fs = require("fs");
-const text = fs.readFileSync("./input.txt", "utf-8");
+const text = require("fs").readFileSync(require("path").resolve(__dirname, "input.txt"), "utf-8");
 const input = text.split("\r\n");
 let out = [0];
 let diff = 0;
